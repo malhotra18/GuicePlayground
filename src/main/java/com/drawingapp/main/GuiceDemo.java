@@ -18,7 +18,7 @@ public class GuiceDemo {
 
     private static void sendRequest(String request) {
         if (request.equals(SQUARE_REQ)) {
-            DrawShape drawSquare = new DrawSquare();
+            DrawShape drawSquare = new DrawSquare("Red", 13);
             SquareRequest squareRequest = new SquareRequest(drawSquare);
             squareRequest.makeRequest();
         }
